@@ -1,0 +1,28 @@
+[package]
+name = "aa_echo"
+version = "0.1.0"
+authors = ["Masanori Misono <m.misono760@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "echo"
+path = "src/echo.rs"
+
+[[bin]]
+name = "thread_echo"
+path = "src/thread_echo.rs"
+
+[[bin]]
+name = "epoll_echo"
+path = "src/epoll_echo.rs"
+
+[[bin]]
+name = "aa_echo"
+path = "src/aa_echo.rs"
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.4.0"
+futures-preview = "=0.3.0-alpha.18"
+log = "0.4"
+env_logger = "0.7.0"
